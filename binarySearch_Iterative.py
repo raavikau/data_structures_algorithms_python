@@ -1,7 +1,8 @@
+# the element is always search in the middle of a portion of sorted array.
 def binary_search(number, target):
     first = 0
     last = len(number) -1
-    while first <= last:
+    while first <= last:      # Repeat until the pointers first and last meet each other
         median = (first + last) // 2
         if number[median] == target:
             return median
